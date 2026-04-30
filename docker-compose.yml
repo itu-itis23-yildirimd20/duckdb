@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    volumes:
+      - ./output:/app/output
+    command: python src/04_etl_pipeline.py
+
+  # Uncomment below to also spin up PostgreSQL for the write-to-postgres demo
+  # postgres:
+  #   image: postgres:15
+  #   environment:
+  #     POSTGRES_USER: ${POSTGRES_USER}
+  #     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+  #     POSTGRES_DB: ${POSTGRES_DB}
+  #   ports:
+  #     - "5432:5432"
