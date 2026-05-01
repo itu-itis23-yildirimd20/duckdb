@@ -49,7 +49,12 @@ cd duckdb-etl-demo
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Run the demo
+# 3. Create required directories and generate mock data
+mkdir data
+mkdir output
+python src/generate_data.py
+
+# 4. Run the demo
 python src/04_etl_pipeline.py
 ```
 
