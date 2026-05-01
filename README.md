@@ -68,11 +68,6 @@ python src/03_parquet_demo.py
 python src/04_etl_pipeline.py
 ```
 
-To run a specific script inside Docker:
-
-```bash
-docker compose run app python src/01_basics.py
-```
 
 ---
 
