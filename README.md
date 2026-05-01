@@ -43,18 +43,7 @@ python src/generate_data.py
 # 4. Run the demo
 python src/04_etl_pipeline.py
 ```
-### Option B — Docker 
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/itu-itis23-yildirimd20/duckdb-etl-demo.git
-cd duckdb-etl-demo
-
-# 2. Copy the example env file
-cp .env.example .env
-
-# 3. Build and run
-docker compose up --build
 ```
 
 
